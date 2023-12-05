@@ -242,14 +242,14 @@ Robotic surgery (2022) Mayo Clinic. Available at: https://www.mayoclinic.org/tes
 ‘<h2> Conference Presentation:Robotic Surgery </h2>’
 <script>
 	//Array of slide image URLs
-	var slideImages=["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; 
+	var slideImages=["slide1.png", "slide2.png", "slide3.png", "slide4.png", "slide5.png"]; 
 	var currentSlide=0;
 
 	function showSlide(){
 		document.getElementByID('slide').src=slideImages[currentSLide];
 
 	function nextSlide(){
-		currentSliede=(currentSlide + 1) % slideImages.lenght;
+		currentSlide=(currentSlide + 1) % slideImages.lenght;
 		showSlide();
 	}
 
@@ -263,7 +263,7 @@ Robotic surgery (2022) Mayo Clinic. Available at: https://www.mayoclinic.org/tes
 		showSlide();
 
 	<div id="slide-container">
-		<img id="slide" src="slide.jpg" alt="Slide 1" style="width:100%; maxx-width:800px;">
+		<img id="slide" src="slide.png" alt="Slide 1" style="width:100%; maxx-width:800px;">
 
 	<div class="button-container">
 		<button class="button" onclick="precSlide()">Previous</button>
