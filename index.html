@@ -250,7 +250,7 @@ Robotic surgery (2022) Mayo Clinic. Available at: https://www.mayoclinic.org/tes
 		document.getElementById('slide').src = slideImages[currentSLide];
 
 	function nextSlide() {
-		currentSlide = (currentSlide + 1 )%  slideImages.lenght;
+		currentSlide = (currentSlide + 1) %  slideImages.lenght;
 		showSlide();
 	}
 
@@ -259,7 +259,7 @@ Robotic surgery (2022) Mayo Clinic. Available at: https://www.mayoclinic.org/tes
 		showSlide();
 	}
 
-	function showSLideNumber(slideNumber) {
+	function showSlideNumber(slideNumber) {
 		currentSlide = slideNumberr - 1;
 		showSlide();
 
