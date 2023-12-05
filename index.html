@@ -239,43 +239,46 @@ Robotic surgery (2022) Mayo Clinic. Available at: https://www.mayoclinic.org/tes
   </body>
 </html>    
 
-‘<h2> Conference Presentation:Robotic Surgery </h2>’
+<h2> Conference Presentation:Robotic Surgery </h2>
+
 <script>
-	//Array of slide image URLs
-	var slideImages=["slide1.png", "slide2.png", "slide3.png", "slide4.png", "slide5.png"]; 
-	var currentSlide=0;
+	
+	var slideImages = ["slide1.png", "slide2.png", "slide3.png", "slide4.png", "slide5.png"]; 
+	var currentSlide = 0;
 
 	function showSlide(){
-		document.getElementByID('slide').src=slideImages[currentSLide];
+		document.getElementById('slide').src = slideImages[currentSLide];
 
-	function nextSlide(){
-		currentSlide=(currentSlide + 1) % slideImages.lenght;
+	function nextSlide() {
+		currentSlide = (currentSlide + 1 )%  slideImages.lenght;
 		showSlide();
 	}
 
 	function prevSlide(){
-		currentSLide=(currentSLide - 1+ slideImages.length) % slideImages.length;
+		currentSLide = (currentSLide - 1 + slideImages.length) % slideImages.length;
 		showSlide();
 	}
 
 	function showSLiderNumber(slideNumber) {
-		currentSlide=slideNumberr-1;
+		currentSlide = slideNumberr - 1;
 		showSlide();
 
+		</script> 
+
 	<div id="slide-container">
-		<img id="slide" src="slide.png" alt="Slide 1" style="width:100%; maxx-width:800px;">
+		<img id="slide" src="slide1.png" alt="Slide 1" style="width:100%; max-width:800px;">
 
 	<div class="button-container">
 		<button class="button" onclick="precSlide()">Previous</button>
-		<button class="button" onclick="nextSLide()">Next</button>
+		<button class="button" onclick="nextSlide()">Next</button>
 	</div>
 
 	<div class="slide-number-container">
-		<button class="button" onclick="showSliderNumber(1)">1</button>
-		<button class="button" onclick="showSliderNumber(2)">2</button>
-		<button class="button" onclick="showSliderNumber(3)">3</button>
-		<button class="button" onclick="showSliderNumber(4)">4</button>		
-		<button class="button" onclick="showSliderNumber(5)">5</button>
+		<button class="button" onclick="showSlideNumber(1)">1</button>
+		<button class="button" onclick="showSlideNumber(2)">2</button>
+		<button class="button" onclick="showSlideNumber(3)">3</button>
+		<button class="button" onclick="showSlideNumber(4)">4</button>		
+		<button class="button" onclick="showSlideNumber(5)">5</button>
 	</div>
 
 		<style>
